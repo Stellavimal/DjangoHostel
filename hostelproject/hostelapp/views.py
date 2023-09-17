@@ -13,4 +13,3 @@ class roomsViewSet(viewsets.ModelViewSet):
 
 
 
-# Create your views here.

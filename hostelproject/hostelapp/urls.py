@@ -1,16 +1,13 @@
-# Inside hostelapp/urls.py
-from django.urls import path, include
-from rest_framework.routers import DefaultRouter
-from . import views
-from .models import *
+from django.contrib import admin
+from django.urls import path,include
+from rest_framework import routers
+from .views import roomsViewSet
 
-router = DefaultRouter()
-router.register(r'rooms', views.ModelViewSet)
+router = routers.DefaultRouter()
+router.register('rooms', roomsViewSet)
 
-# Add other viewsets and routes as needed
+
 
 urlpatterns = [
-    
     path('api/', include(router.urls)),
-  
 ]
