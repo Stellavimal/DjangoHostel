@@ -39,7 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'hostelapp',
     'rest_framework',
+    'django_filters'
 ]
+CORS_ORIGIN_WHITELIST=(
+    'http://localhost:3000',
+)
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
